@@ -1,3 +1,4 @@
+
 body {
     background-color: #000000; 
     color: #ff0000; 
@@ -19,7 +20,6 @@ a {
 a:hover {
     color: #FFFFFF; 
 }
-
 
 #experience {
     display: flex;
@@ -55,7 +55,6 @@ a:hover {
     color: #C0C0C0; 
 }
 
-
 #connect ul {
     display: flex;
     justify-content: space-around;
@@ -89,5 +88,73 @@ a:hover {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+
+@media (min-width: 768px) {
+    
+    #experience {
+        flex-direction: row; 
+        padding: 30px;      
+    }
+
+    
+    #experience .job-title {
+        font-size: 1.8em; 
+    }
+
+    
+    #connect ul {
+        justify-content: space-between; 
+    }
+    
+    #connect li {
+        padding: 15px; 
+    }
+}
+
+
+@media (min-width: 1024px) {
+   
+    #experience {
+        padding: 40px;        
+        border-radius: 15px;  
+    }
+
+    
+    #experience .job-title {
+        font-size: 2em;       
+        color: #FFFFFF;       
+    }
+
+    
+    #connect ul {
+        margin: 30px 0; 
+    }
+    
+    #connect li {
+        padding: 20px;       
+        background-color: #333333; 
+    }
+}
+
+@media (min-width: 1024px) {
+    #experience {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 40px;
+        background-color: #1C1C1C;
+        border-radius: 15px;
+        border: 1px solid #ff0000;
+    }
+
+    #experience .job {
+        margin-bottom: 0; 
+    }
+
+    #experience .job-description {
+        grid-column: 1 / -1; 
+    }
 }
 
