@@ -1,79 +1,93 @@
 body {
     background-color: #000000; 
     color: #ff0000; 
-    font-family: 'Roboto', Arial, sans-serif; 
+    font-family: 'Roboto', Arial, sans-serif;
     padding: 0;
+    margin: 0;
 }
-
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ff0000; 
-}
-
-
-#about {
-    text-align: center;
-}
-
 
 h1, h2, h3 {
     color: #ff0000; 
     font-weight: 700;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-
-#name {
-    font-size: 3em;
+a {
     color: #ff0000; 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF; 
+}
+
+
+#experience {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    border: 1px solid #ff0000;
+    padding: 20px;
+    background-color: #1C1C1C; 
+    border-radius: 10px;
+}
+
+#experience .job {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#experience .job-title {
+    font-size: 1.5em;
     font-weight: bold;
-    text-transform: uppercase;
+}
+
+#experience .job-dates {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ff0000;
+}
+
+#experience .job-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #C0C0C0; 
 }
 
 
-#profile-picture {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+#connect ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    margin: 20px 0;
 }
 
-
-#experience li {
-    background-color: #333333;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ff0000; 
+#connect li {
+    background-color: #1C1C1C;
     border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
+#connect li:hover {
+    background-color: #ff0000; 
+}
 
 #connect a {
-    color: #ff0000; 
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
 }
 
 #connect a:hover {
-    text-decoration: underline;
+    color: #000000; 
 }
-
 
 #connect img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
+
