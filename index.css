@@ -1,22 +1,36 @@
 body {
-    background-color: #000000; 
-    color: #ff0000; 
-    font-family: 'Roboto', Arial, sans-serif; 
+    background-color: #000000;
+    color: #ff0000;
+    font-family: 'Roboto', Arial, sans-serif;
     padding: 0;
+    margin: 0;
 }
 
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ff0000; 
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
 }
 
-#about {
-    text-align: center;
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, h3 {
-    color: #ff0000; 
+    color: #ff0000;
     font-weight: 700;
 }
 
@@ -34,38 +48,56 @@ h3 {
 
 #name {
     font-size: 3em;
-    color: #ff0000; 
+    color: #ff0000;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
 }
 
-#profile-picture {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ff0000;
 }
 
-#experience li {
+#about {
+    text-align: center;
+}
+
+#skills ul, #experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li, #experience li {
     background-color: #333333;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ff0000; 
+    border: 1px solid #ff0000;
     border-radius: 5px;
 }
 
-#connect a {
-    color: #ff0000; 
-    text-decoration: none;
-    font-size: 1.5em; 
-}
-
-#connect a:hover {
-    text-decoration: underline;
+#connect ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 #connect li {
     display: inline-block;
-    margin-right: 15px; 
+    margin: 0 10px;
+}
+
+#connect a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#connect a:hover {
+    color: #ffaaaa;
+}
+
+#connect i {
+    font-size: 24px;
 }
