@@ -7,15 +7,13 @@ body {
 
 section {
     padding: 20px;
-    margin-bottom: 20px; n
+    margin-bottom: 20px;
     border: 1px solid #ff0000; 
 }
-
 
 #about {
     text-align: center;
 }
-
 
 h1, h2, h3 {
     color: #ff0000; 
@@ -34,14 +32,12 @@ h3 {
     font-size: 1.5em;
 }
 
-
 #name {
     font-size: 3em;
     color: #ff0000; 
     font-weight: bold;
     text-transform: uppercase;
 }
-
 
 #profile-picture {
     width: 150px;
@@ -51,7 +47,6 @@ h3 {
     margin: 0 auto;
 }
 
-
 #experience li {
     background-color: #333333;
     padding: 10px;
@@ -60,20 +55,17 @@ h3 {
     border-radius: 5px;
 }
 
-
 #connect a {
     color: #ff0000; 
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.5em; 
 }
 
 #connect a:hover {
     text-decoration: underline;
 }
 
-
-#connect img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+#connect li {
+    display: inline-block;
+    margin-right: 15px; 
 }
