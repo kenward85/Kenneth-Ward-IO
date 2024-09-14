@@ -1,3 +1,4 @@
+
 header nav ul {
     list-style-type: none;
     padding: 0;
@@ -21,6 +22,16 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+
+body {
+    background-color: #000000; 
+    color: #ff0000; 
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
 h1, h2, h3 {
     color: #ff0000;
     font-weight: 700;
@@ -35,6 +46,7 @@ a:hover {
     color: #FFFFFF; 
 }
 
+
 #experience {
     display: flex;
     flex-direction: column;
@@ -45,6 +57,7 @@ a:hover {
     border-radius: 10px;
 }
 
+
 #name {
     font-size: 3em;
     color: #ff0000;
@@ -53,6 +66,40 @@ a:hover {
     text-align: center;
     margin-top: 20px;
 }
+
+#connect ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+
+#experience .job {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#experience .job-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#experience .job-dates {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ff0000;
+}
+
+#experience .job-description {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #C0C0C0; 
+}
+
 
 #connect ul {
     display: flex;
@@ -88,6 +135,5 @@ a:hover {
     height: 30px;
     margin-right: 10px;
 }
-
 
 
