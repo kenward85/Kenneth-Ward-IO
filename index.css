@@ -1,11 +1,3 @@
-body {
-    background-color: #000000; 
-    color: #ff0000; 
-    font-family: 'Roboto', Arial, sans-serif;
-    padding: 0;
-    margin: 0;
-}
-
 header nav ul {
     list-style-type: none;
     padding: 0;
@@ -62,52 +54,6 @@ a:hover {
     margin-top: 20px;
 }
 
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ff0000;
-}
-
-#about {
-    text-align: center;
-}
-
-#experience .job {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#experience .job-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#experience .job-dates {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #ff0000;
-}
-
-#experience .job-description {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #C0C0C0; 
-}
-
-#skills ul, #experience ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills li, #experience li {
-    background-color: #333333;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ff0000;
-}
-
 #connect ul {
     display: flex;
     justify-content: space-around;
@@ -142,5 +88,6 @@ section {
     height: 30px;
     margin-right: 10px;
 }
+
 
 
