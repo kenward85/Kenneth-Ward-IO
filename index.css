@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
     background-color: #000000; 
     color: #ff0000; 
@@ -6,11 +7,13 @@ body {
     margin: 0;
 }
 
+/* Headings */
 h1, h2, h3 {
     color: #ff0000; 
     font-weight: 700;
 }
 
+/* Links */
 a {
     color: #ff0000; 
     text-decoration: none;
@@ -20,7 +23,7 @@ a:hover {
     color: #FFFFFF; 
 }
 
-
+/* Experience Section */
 #experience {
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@ a:hover {
     color: #C0C0C0; 
 }
 
-
+/* Connect Section */
 #connect ul {
     display: flex;
     justify-content: space-around;
@@ -85,9 +88,49 @@ a:hover {
     color: #000000; 
 }
 
+/* Social Media Icons */
 #connect img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #1C1C1C;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ff0000;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff0000;
+    color: #FFFFFF;
+    transition: 0.3s ease;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1C1C1C;
+    text-align: center;
+    padding: 10px 0;
+    color: #ff0000;
 }
 
