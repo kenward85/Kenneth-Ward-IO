@@ -3,139 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Ward Productions</title>
+    <title>Kenneth Ward Jr. Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <nav>
+
+    <!-- Navigation -->
+    <nav id="navbar">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#connect">Contact</a></li>
+            <li><a href="#contact">Leave a Message</a></li>
         </ul>
     </nav>
 
-    
+    <!-- Header -->
     <header>
-        <h1 id="name">Kenneth Ward</h1>
+        <h1>Kenneth Ward Jr.</h1>
     </header>
 
-    
+    <!-- Main Content -->
+
+    <!-- About Section -->
     <section id="about">
         <h2>About</h2>
         <p>
-            I am Kenneth Ward Jr., a Bay Area native with a passion for videography, photography, and storytelling. 
-            I currently work at GLIDE, a non-profit organization in San Francisco, California, where I manage digital content and social media. 
-            I also run my own company, Junior Ward Productions, through which I produce high-quality visual content ranging from promotional videos to documentaries. 
-            With years of experience in video production, I’m now expanding my skill set and embarking on a new journey into software development, aiming to leverage technology to amplify creative and social impact.
+            Hi, I'm Kenneth Ward Jr., a photographer, videographer, and aspiring web developer. My journey began with a passion for visual storytelling, which has led me to work on various creative projects, including music videos, interviews, and promotional content for non-profit organizations. I am the founder of Junior Ward Productions, where I provide independent photography and videography services. My work extends to non-profits like Code Tenderloin and East Oakland Youth Development Centre, where I use my creative skills to create powerful media that supports their missions.
+        </p>
+        <p>
+            Currently, I am working at GLIDE Foundation, where I contribute to both social media content creation and web development. I manage the organization’s online presence by creating visuals and updating the website to enhance user experience. My web development journey started as a way to expand my skillset and provide even more impactful services to the organizations I care about. My focus is on learning new technologies such as JavaScript, HTML, CSS, and API integration. This knowledge allows me to combine my creativity with technical skills to create engaging, responsive web content.
         </p>
     </section>
 
-
+    <!-- Experience Section -->
     <section id="experience">
         <h2>Experience</h2>
-        
-        <div class="job">
-            <div class="job-title">Social Media Manager and Digital Content Specialist at GLIDE</div>
-            <div class="job-dates">2023 - Present</div>
-        </div>
-        <div class="job-description">
-            At GLIDE, I serve as the Social Media Manager and Digital Content Specialist. I am responsible for managing the organization’s social media presence, 
-            creating digital content, and enhancing their online storytelling. Through my work, I help elevate GLIDE's mission of social justice and inclusion 
-            by reaching a wider audience with engaging, impactful content.
-        </div>
-
-        <div class="job">
-            <div class="job-title">Videographer at Junior Ward Productions</div>
-            <div class="job-dates">2015 - Present</div>
-        </div>
-        <div class="job-description">
-            As the founder and lead videographer at Junior Ward Productions, I have created impactful visual content for various clients, including non-profits and businesses. 
-            I specialize in producing promotional videos, documentaries, and event highlights. My work includes managing all stages of production, from concept to final editing, 
-            ensuring each project resonates with its intended audience.
+        <div class="experience-grid">
+            <div>
+                <h3>GLIDE Foundation</h3>
+                <p>2023 - Present</p>
+                <p>
+                    At GLIDE Foundation, I contribute to social media content creation and web development. My role involves managing the organization’s social media channels, creating engaging visual content, and designing web layouts that improve the user experience. I work on maintaining and updating the website with new content, ensuring that it aligns with the mission of GLIDE and serves as a resource for the community. 
+                </p>
+            </div>
+            <div>
+                <h3>Junior Ward Productions</h3>
+                <p>2015 - Present</p>
+                <p>
+                    As the founder of Junior Ward Productions, I provide independent photography and videography services. Over the years, I have worked on a range of projects, including shooting music videos, interviews, and promotional content. My clients include non-profits like Code Tenderloin and East Oakland Youth Development Centre. My goal is to use media to tell compelling stories and give a voice to important causes. My work has spanned many formats, from traditional interviews to more dynamic, artistic visual pieces.
+                </p>
+            </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            
+        <ul id="skills-list" class="skills-grid">
+            <!-- Skills will be inserted here by JavaScript -->
         </ul>
     </section>
 
-
-    
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>My GitHub Repositories</h2>
-        <ul>
-           
+        <h2>Projects</h2>
+        <ul id="projects-list" class="projects-grid">
+            <!-- GitHub projects will be inserted here by JavaScript -->
         </ul>
     </section>
 
-    <section id="message">
+    <!-- Leave a Message Section -->
+    <section id="contact">
         <h2>Leave a Message</h2>
-        <form name="leave_message">
-            <label for="usersName">Name:</label>
-            <input type="text" id="usersName" name="usersName" required>
-            <br>
+        <form id="message-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
             
-            <label for="usersEmail">Email:</label>
-            <input type="email" id="usersEmail" name="usersEmail" required>
-            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
             
-            <label for="usersMessage">Message:</label>
-            <textarea id="usersMessage" name="usersMessage" required></textarea>
-            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
             
             <button type="submit">Submit</button>
         </form>
 
-    </section>
-
-    <section id="connect">
-        <h2>Connect with Me</h2>
-        <ul>
-            <li>
-                <a href="mailto:kenwardjr8592@gmail.com">
-                    <img src="images/email-icon.png" alt="Email" width="30" height="30"> Email: kenwardjr8592@gmail.com
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/juniorwardprod" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram" width="30" height="30"> Instagram: @juniorwardprod
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/KennethWard" target="_blank">
-                    <img src="images/linkedin-icon.png" alt="LinkedIn" width="30" height="30"> LinkedIn: Kenneth Ward
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/channel/JuniorWardProduction" target="_blank">
-                    <img src="images/youtube-icon.png" alt="YouTube" width="30" height="30"> YouTube: Junior Ward Production
-                </a>
-            </li>
+        <h2 id="messages-heading" style="display: none;">Messages</h2>
+        <ul id="messages-list" class="messages-grid">
+            <!-- Messages will be inserted here by JavaScript -->
         </ul>
     </section>
 
-
-    
+    <!-- Footer -->
     <footer>
-        <p>&copy; Kenneth Ward, 2024</p>
+        <p id="copyright"></p>
+        <p>
+            <a href="mailto:kenwardjr8592@hotmail.com">Email</a> | 
+            <a href="https://github.com/kenward85" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/kennethward/" target="_blank">LinkedIn</a>
+        </p>
     </footer>
 
+    <!-- JavaScript -->
     <script src="index.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-    
-    
-    
-

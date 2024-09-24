@@ -1,112 +1,40 @@
-/* General Body Styling */
+/* General styles for the body */
 body {
-    background-color: #000000; 
-    color: #ff0000; 
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Header section */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: #ff0000; /* Red text */
+}
+
+h1 {
+    font-size: 2.5em;
     margin: 0;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: #ff0000; 
-    font-weight: 700;
-}
-
-/* Links */
-a {
-    color: #ff0000; 
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FFFFFF; 
-}
-
-/* Experience Section */
-#experience {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    border: 1px solid #ff0000;
-    padding: 20px;
-    background-color: #1C1C1C; 
-    border-radius: 10px;
-}
-
-#experience .job {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-#experience .job-title {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-#experience .job-dates {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #ff0000;
-}
-
-#experience .job-description {
-    margin-top: 10px;
-    font-size: 1em;
-    color: #C0C0C0; 
-}
-
-/* Connect Section */
-#connect ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    list-style-type: none;
-    margin: 20px 0;
-}
-
-#connect li {
-    background-color: #1C1C1C;
-    border-radius: 5px;
-    padding: 10px;
-    transition: background-color 0.3s ease;
-}
-
-#connect li:hover {
-    background-color: #ff0000; 
-}
-
-#connect a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#connect a:hover {
-    color: #000000; 
-}
-
-/* Social Media Icons */
-#connect img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-/* Navigation Styling */
+/* Navigation bar */
 nav {
-    background-color: #1C1C1C;
-    padding: 10px;
+    background-color: #000; /* Black background */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -114,23 +42,152 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ff0000;
+    color: #ff0000; /* Red text */
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px;
     display: block;
 }
 
 nav ul li a:hover {
-    background-color: #ff0000;
-    color: #FFFFFF;
-    transition: 0.3s ease;
+    background-color: #ff0000; /* Red background on hover */
+    color: #000; /* Black text on hover */
 }
 
-/* Footer Styling */
-footer {
-    background-color: #1C1C1C;
-    text-align: center;
-    padding: 10px 0;
-    color: #ff0000;
+/* Main content padding */
+main {
+    padding: 20px;
 }
+
+/* About Section */
+#about {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #111; /* Darker gray/black */
+    border-left: 4px solid #ff0000; /* Red border on the left */
+}
+
+/* Experience Section formatted using Flexbox */
+.experience-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-grid > div {
+    flex: 1;
+    background-color: #111; /* Darker gray background */
+    padding: 20px;
+    border: 2px solid #ff0000; /* Red border */
+    color: #fff; /* White text */
+}
+
+.experience-grid h3 {
+    color: #ff0000; /* Red for job titles */
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    background-color: #111; /* Dark background */
+    padding: 20px;
+    border-left: 4px solid #ff0000; /* Red border on the left */
+}
+
+.skills-grid li {
+    background-color: #000; /* Black background for skills */
+    padding: 10px;
+    border: 1px solid #ff0000; /* Red border around each skill */
+    text-align: center;
+    color: #fff;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    background-color: #111; /* Dark background */
+    padding: 20px;
+    border-left: 4px solid #ff0000; /* Red border on the left */
+}
+
+.projects-grid li {
+    background-color: #000; /* Black background for project items */
+    padding: 10px;
+    border: 1px solid #ff0000; /* Red border */
+    text-align: center;
+    color: #fff;
+}
+
+/* Messages Section */
+.messages-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* Footer (Connect section) formatted using Flexbox */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Black background */
+    color: #fff;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ff0000; /* Red text for social links */
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+footer a:hover {
+    color: #fff; /* White text on hover */
+}
+
+/* Media Query for devices with max-width of 768px */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    .experience-grid {
+        flex-direction: column; /* Stack experience items vertically */
+    }
+
+    footer {
+        flex-direction: column; /* Stack footer content vertically */
+        text-align: center;
+    }
+}
+
+/* Media Query for devices with max-width of 500px */
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 1.8em; /* Decrease header font size */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Reduce padding in navigation */
+    }
+
+    .experience-grid > div {
+        padding: 10px; /* Reduce padding in experience section */
+    }
+
+    footer p {
+        font-size: 0.8em; /* Reduce font size in footer */
+    }
+}
+
+
+
+
 
