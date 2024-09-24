@@ -1,8 +1,23 @@
 // Insert the current year, copyright logo, and student's name in the footer dynamically
-document.getElementById('copyright').innerHTML = `&copy; ${new Date().getFullYear()} Kenneth Ward Jr.`;
+const today = new Date();
+const thisYear = today.getFullYear();
+const copyright = document.getElementById('copyright');
+copyright.innerHTML = `&copy; ${thisYear} Kenneth Ward Jr.`;
 
 // Array of skills to be inserted into the Skills section dynamically
-const skills = ['HTML', 'CSS', 'JavaScript', 'API Integration', 'Photography', 'Videography'];
+const skills = [
+    'Video Editing',
+    'JavaScript',
+    'HTML',
+    'Social Media',
+    'Analytics',
+    'Content Creation',
+    'Content Strategy',
+    'API Integration',
+    'Photoshop',
+    'InDesign',
+    'WordPress'
+];
 
 // Insert skills array into the skills section of the page
 const skillsList = document.getElementById('skills-list');
@@ -64,13 +79,13 @@ fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
     .then(repositories => {
         console.log('Repositories:', repositories); // Log the repositories data
 
-        const projectList = document.querySelector('#projects-list'); // Select the projects list
+        const projectList = document.getElementById('projects-list'); // Select the projects list
 
         // Loop through repositories and create list items for each
         repositories.forEach(repo => {
-            const project = document.createElement('li'); // Create a list item for each repo
-            project.textContent = repo.name; // Set the text content to the repository name
-            projectList.appendChild(project); // Append the list item to the projects list
+            const li = document.createElement('li'); // Create a list item for each repo
+            li.textContent = repo.name; // Set the text content to the repository name
+            projectList.appendChild(li); // Append the list item to the projects list
         });
     })
     .catch(error => {
@@ -82,9 +97,6 @@ fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos`)
         errorMessage.textContent = 'There was an error loading the repositories. Please try again later.'; // Set the error message
         projectSection.appendChild(errorMessage); // Append the error message to the project section
     });
-
-
-
 
 
 
